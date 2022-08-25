@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form - by Bruno Mota</h1>
+    <p id="description">Please fill the questions bellow</p>
+    <form id="survey-form" action="https://ca.linkedin.com/in/bruno-nascimento-mota-83212965/en?trk=people-guest_people_search-card" method="post">
+      <fieldset class="form-field">
+        <label id="name-label" for="name">Enter your name: <input id="name" type="text" name="name" placeholder=" Name" required /></label>
+        <label id="email-label" for="email">Enter your email: <input id="email" type="email" name="email" minlength="8" placeholder=" Email" required /></label>
+        <label id="number-label" for="age">Age (optional): <input id="number" type="number" name="number" min="10" max="120" placeholder=" Age" /></label>
+        <hr>
+        <label> Select your prefered hobby?
+          <select id="dropdown">
+            <option> (select one)</option>
+            <option name="sport" value="sport"> Sport</option>
+            <option name="study" value="study"> Study</option>
+            <option name="watch-tv" value="watch tv"> Watch TV</option>
+            <option name="play-video-game" value="play-video-game"> Play Video Game</option>
+            <option name="other" value="other"> Other</option>
+          </select>
+        </label>
+        <hr>
+        <label class="form-gender"> Select your gender
+          <input type="radio" name="gender" value="male"> Male
+        </label>
+        <label class="form-gender">
+          <input type="radio" name="gender" value="female"> Female
+        </label>
+        <hr>
+        <label> Select your prefered social media
+          <label><input type="checkbox" value="youtube" name="youtube">YouTube</label>
+          <label><input type="checkbox" value="instagram" name="instagram">Instagram</label>
+          <label><input type="checkbox" value="facebook" name="facebook">Fecebook</label>
+          <label><input type="checkbox" value="tiktok" name="tiktok">TikTok</label>
+          <label><input type="checkbox" value="orkut" name="orkut">Orkut</label>  
+        </label>
+        <hr>
+        <label id="text-label"> Comments or suggestions
+          <textarea rows="10" cols="60"></textarea>
+        </label>
+        <input id="submit" type="submit" value="Submit" name="submit">
+    </fieldset>    
+    </form>
+    <footer>Created by Bruno Mota to FreeCodeCamp</footer>
+  </body>
+</html>
+
+<!-- Steps of code
+
+User Stories:
+
+You should have a page title in an h1 element with an id of title
+You should have a short explanation in a p element with an id of description
+You should have a form element with an id of survey-form
+Inside the form element, you are required to enter your name in an input field that has an id of name and a type of text
+Inside the form element, you are required to enter your email in an input field that has an id of email
+If you enter an email that is not formatted correctly, you will see an HTML5 validation error
+Inside the form, you can enter a number in an input field that has an id of number
+If you enter non-numbers in the number input, you will see an HTML5 validation error
+If you enter numbers outside the range of the number input, which are defined by the min and max attributes, you will see an HTML5 validation error
+For the name, email, and number input fields, you can see corresponding label elements in the form, that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label"
+For the name, email, and number input fields, you can see placeholder text that gives a description or instructions for each field
+Inside the form element, you should have a select dropdown element with an id of dropdown and at least two options to choose from
+Inside the form element, you can select an option from a group of at least two radio buttons that are grouped using the name attribute
+Inside the form element, you can select several fields from a series of checkboxes, each of which must have a value attribute
+Inside the form element, you are presented with a textarea for additional comments
+Inside the form element, you are presented with a button with id of submit to submit all the inputs
+
+-->
