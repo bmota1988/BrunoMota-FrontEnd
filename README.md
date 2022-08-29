@@ -1,9 +1,3 @@
-# BrunoMota-FrontEnd
+# Survey Form
 
-Hi there,
-
-Here are some of my front-end projects for FreeCodeCamp.
-
-Regards,
-
-Bruno Nascimento Mota
+This code is about a simple survey form using HTML and CSS. 
